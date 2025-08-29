@@ -1,0 +1,22 @@
+[package]
+name = "boost_safe_numerics"
+description = "Boost C++ library boost_safe_numerics packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_safe_numerics"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_safe_numerics"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_concept_check = { version = "0.1.0", path = "../boost_concept_check" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_integer = { version = "0.1.0", path = "../boost_integer" }
+boost_logic = { version = "0.1.0", path = "../boost_logic" }
+boost_mp11 = { version = "0.1.0", path = "../boost_mp11" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
